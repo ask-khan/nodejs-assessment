@@ -1,0 +1,65 @@
+# Node Js Assessment Installation Steps.
+
+1. git clone https://github.com/ask-khan/nodejs-assessment.git
+2. npm install - for node modules installation
+3. npm start  - to run node js server.
+4. npm test - to run ava test case.
+
+------
+
+Sample Example:-
+
+POST
+Sign In :- localhost:3000/signin
+Header:Content-Type: application/json
+Body:
+password:saboor123
+email:ahmedsaboor+5@gmail.com
+
+Response:
+{
+    "data": {
+        "email": "ahmedsaboor+5@gmail.com",
+        "password": "saboor123",
+        "userid": "M3eqKbJkYAhY6weaISvbO6jBeat2",
+        "username": "Ahmed Saboor Khan",
+        "token": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImEwY2ViNDY3NDJhNjNlMTk2NDIxNjNhNzI4NmRjZDQyZjc0MzYzNjYifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vc2FtcGxlLXByb2plY3QtMi0xNTk1ZSIsImF1ZCI6InNhbXBsZS1wcm9qZWN0LTItMTU5NWUiLCJhdXRoX3RpbWUiOjE1MzYxMzczNTcsInVzZXJfaWQiOiJNM2VxS2JKa1lBaFk2d2VhSVN2Yk82akJlYXQyIiwic3ViIjoiTTNlcUtiSmtZQWhZNndlYUlTdmJPNmpCZWF0MiIsImlhdCI6MTUzNjEzNzM1NywiZXhwIjoxNTM2MTQwOTU3LCJlbWFpbCI6ImFobWVkc2Fib29yKzVAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImFobWVkc2Fib29yKzVAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.arKS6AnN_SqoYeuuJCzzbpe2Tz2o3FWUuqQbUbT27ucrIko5JWIXx5kyj6G0h_188_2AR36PSrTxSSrn885ULZGlH5W82nKJRVH5v1Z26Zo1Mmd694M_uTkMtqmpmSYOIo37fBJaTnNbMyL8tN8GxVGD_d2c7Shjzpnsh3ErIHsC8_31nEXv4baMSbACQhhp28Dd80_nHXy8ZFrXl1PJqGoazf_vR_5a3w9P7p8XNt-8YcqdXz5jTTw0nJX-ryZq7J6tPongRXgJg82CsHym5a5OramcEj8lVBifUBpu-g6IjUrVGEjBf9f6lcMSqHUjFAOohjfFcsS6aXf_qFOc3Q"
+    },
+    "message": "User sign in sucessfully.",
+    "status": 200
+}
+
+GET
+getptodo :- localhost:3000/getptodo/M3eqKbJkYAhY6weaISvbO6jBeat2
+Header:Content-Type: application/json
+Authorization: Bearer token id
+
+Response:
+{
+    "data": {
+        "email": "ahmedsaboor+5@gmail.com",
+        "password": "saboor123",
+        "userid": "M3eqKbJkYAhY6weaISvbO6jBeat2",
+        "username": "Ahmed Saboor Khan",
+        "token": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImEwY2ViNDY3NDJhNjNlMTk2NDIxNjNhNzI4NmRjZDQyZjc0MzYzNjYifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vc2FtcGxlLXByb2plY3QtMi0xNTk1ZSIsImF1ZCI6InNhbXBsZS1wcm9qZWN0LTItMTU5NWUiLCJhdXRoX3RpbWUiOjE1MzYxMzczNTcsInVzZXJfaWQiOiJNM2VxS2JKa1lBaFk2d2VhSVN2Yk82akJlYXQyIiwic3ViIjoiTTNlcUtiSmtZQWhZNndlYUlTdmJPNmpCZWF0MiIsImlhdCI6MTUzNjEzNzM1NywiZXhwIjoxNTM2MTQwOTU3LCJlbWFpbCI6ImFobWVkc2Fib29yKzVAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImFobWVkc2Fib29yKzVAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.arKS6AnN_SqoYeuuJCzzbpe2Tz2o3FWUuqQbUbT27ucrIko5JWIXx5kyj6G0h_188_2AR36PSrTxSSrn885ULZGlH5W82nKJRVH5v1Z26Zo1Mmd694M_uTkMtqmpmSYOIo37fBJaTnNbMyL8tN8GxVGD_d2c7Shjzpnsh3ErIHsC8_31nEXv4baMSbACQhhp28Dd80_nHXy8ZFrXl1PJqGoazf_vR_5a3w9P7p8XNt-8YcqdXz5jTTw0nJX-ryZq7J6tPongRXgJg82CsHym5a5OramcEj8lVBifUBpu-g6IjUrVGEjBf9f6lcMSqHUjFAOohjfFcsS6aXf_qFOc3Q"
+    },
+    "message": "User sign in sucessfully.",
+    "status": 200
+}
+
+POST:
+add todo :localhost:3000/addptodo
+Header:Content-Type: application/json
+Authorization: Bearer token id
+body: {
+
+}
+
+Response:
+{
+    "data": {
+       
+    },
+    "message": "",
+    "status": 200
+}
