@@ -1,0 +1,35 @@
+{
+  "name": "nodejs-assessment",
+  "version": "1.0.0",
+  "description": "Node JS Assessment tasks",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node_modules/.bin/ava tests/**/*.test.js --verbose",
+    "test:watch": "node_modules/.bin/ava --verbose --watch"
+  },
+  "author": "Ahmed Saboor Khan",
+  "license": "ISC",
+  "dependencies": {
+    "babel-register": "^6.26.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "express-firebase-middleware": "^2.0.0",
+    "fcm-node": "^1.3.0",
+    "firebase": "^5.4.2",
+    "firebase-admin": "^6.0.0",
+    "firebase-messaging": "^1.0.6",
+    "save": "^2.3.2",
+    "validator": "^10.7.0",
+    "winston": "^3.0.0"
+  },
+  "devDependencies": {
+    "ava": "^1.0.0-beta.8",
+    "ava-http": "^1.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^23.5.0",
+    "superagent": "^3.8.3",
+    "supertest": "^3.1.0"
+  }
+}
